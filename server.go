@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/inagacky/weather_linebot/app/util"
+	"github.com/inagacky/weather_linebot/weather/util"
 	"log"
 	"net/http"
 )
