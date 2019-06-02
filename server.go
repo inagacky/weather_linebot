@@ -23,7 +23,6 @@ func main() {
 
 func castWeather(w http.ResponseWriter, r *http.Request) {
 
-	env := env.GetEnv()
-	fmt.Fprintf(w, env.AccessToken)
+	fmt.Fprintf(w, "hogehoge")
 
 }
