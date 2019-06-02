@@ -14,7 +14,7 @@ func main() {
 		log.Panic("Environment Not Found: ", envErr)
 	}
 
-	http.HandleFunc("/cast", castWeather)
+	http.HandleFunc("/report", castWeather)
 	err := http.ListenAndServe(":" + env.GetEnv().Port, nil)
 	if err != nil {
 		log.Panic("ListenAndServe: ", err)
