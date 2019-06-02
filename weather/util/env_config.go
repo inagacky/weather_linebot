@@ -6,8 +6,9 @@ import (
 )
 
 type Env struct {
+	Port string `envconfig:"PORT" default:"8080"`
 	AccessToken string `envconfig:"LINE_ACCESS_TOKEN" required:"true"`
-	ChannelSecret string `envconfig:"LINE_CHANNEL_SECRET" required:"true"`
+	ChannelSecret string `envconfig:"LINE_CHANNEL_SECRET" default:"true"`
 }
 
 var env Env

@@ -15,7 +15,7 @@ func main() {
 	}
 
 	http.HandleFunc("/cast", castWeather)
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":" + env.GetEnv().Port, nil)
 	if err != nil {
 		log.Panic("ListenAndServe: ", err)
 	}
